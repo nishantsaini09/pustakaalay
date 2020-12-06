@@ -133,3 +133,40 @@
 .team-boxed .social a:hover {
     opacity: 1
 }
+
+div.iphone-mockup {
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    display: inline-block
+}
+
+.iphone-mockup img.device {
+    width: 100%;
+    height: auto
+}
+
+.iphone-mockup .screen {
+    position: absolute;
+    width: 88%;
+    height: 77%;
+    top: 12%;
+    border-radius: 2px;
+    left: 6%;
+    border: 1px solid #444;
+    overflow: hidden;
+    background: url(/assets/img/screen-logo.jpg) center;
+    background-size: cover
+}
+
+.iphone-mockup .screen:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 140%;
+    top: -12%;
+    right: -60%;
+    transform: rotate(-19deg);
+    opacity: .2
+}
